@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurra's github.io</title>
+    <style>
+        html{height: 100%;}
+        body {
+            background-color: rgb(29, 29, 29);
+            margin: 0%;
+            padding: 0%;
+        }
+        pre   {color: rgb(229, 229, 229);}
+        .main{
+            margin-left: 2%;
+            margin-top: 1%;
+            display: flex;
+
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.style.backgroundColor = "#292929"; 
+            }
+            else{
+                document.body.style.backgroundColor = "#FAFAFA"; 
+            }
+    });
+    </script>
 </head>
 <body>
-    PZ!
+    <div class="main">
+        <pre>Pz!</pre>
+    </div>
 </body>
 </html>
